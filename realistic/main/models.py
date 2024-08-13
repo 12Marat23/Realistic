@@ -44,7 +44,7 @@ class Article(models.Model):  # article model for blog
     created_at = models.DateTimeField(auto_now_add=True, verbose_name='Дата создания')
     photo = models.ImageField(upload_to='photos/%Y/%m/%d', verbose_name='Фото', blank=True)
     views = models.IntegerField(default=0, verbose_name='Количество просмотров')
-    category = models.ForeignKey(Category, on_delete=models.PROTECT, verbose_name='Категория', related_name='posts')
+    category = models.ForeignKey(Category, on_delete=models.PROTECT, verbose_name='Категория', related_name='articles')
 
     def __str__(self):
         return self.title
