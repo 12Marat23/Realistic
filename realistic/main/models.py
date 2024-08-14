@@ -17,7 +17,7 @@ class Menu(models.Model):
         ordering = ['name']
 
     def get_absolute_url(self):
-        return reverse('index', kwargs={'slug': self.slug})
+        return reverse('menu', kwargs={'slug': self.slug})
 
 
 class Category(models.Model):
@@ -56,3 +56,5 @@ class Article(models.Model):  # article model for blog
 
     def get_absolute_url(self):
         return reverse('article', kwargs={'slug': self.slug})
+
+

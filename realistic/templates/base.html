@@ -1,5 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 {% load static %}
+
 <!--
 Template Name: Realistic
 Author: <a href="http://www.os-templates.com/">OS Templates</a>
@@ -24,7 +25,32 @@ jQuery(function () {
 <!-- / Superfish Menu -->
 </head>
 <body id="top">
+<div class="wrapper">
+  <div id="header">
+    <h1><a href="/">Realistic</a></h1>
+    <p>Free Website Template</p>
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper">
+  <div id="topbar">
+    <div class="fl_left">Tel: xxxxx xxxxxxxxxx | Mail: info@domain.com</div>
+    <div class="fl_right">
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Site Search</legend>
+          <input type="text" value="Search Our Website&hellip;"  onfocus="this.value=(this.value=='Search Our Website&hellip;')? '' : this.value ;" />
+          <input type="submit" name="go" id="go" value="Search" />
+        </fieldset>
+      </form>
+    </div>
+    <br class="clear" />
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+  {% include 'inc/_main.html' %}
        {% block content %}
+
         {% endblock %}
 <!-- ####################################################################################################### -->
 <div class="wrapper">

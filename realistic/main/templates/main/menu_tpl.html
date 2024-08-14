@@ -1,0 +1,9 @@
+<div id="topnav">
+    <ul class="nav">
+        <li><a href=" {% url 'home' %} ">Homepage</a></li>
+        {% for menu in menus %}
+        <li><a href="{{ menu.get_absolute_url }}">{{menu.name}}</a></li>
+        {% endfor %}
+    </ul>
+    <div class="clear"></div>
+</div>
