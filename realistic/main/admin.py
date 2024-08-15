@@ -9,7 +9,7 @@ class MenuAdmin(admin.ModelAdmin):
     prepopulated_fields = {'slug': ('name',)}
     save_as = True
     save_on_top = True
-    list_display = ('name', 'slug')
+    list_display = ('id', 'name', 'slug')
 
 
 class CategoryAdmin(admin.ModelAdmin):
