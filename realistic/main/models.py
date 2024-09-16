@@ -17,7 +17,7 @@ class Menu(models.Model):
         ordering = ['name']
 
     def get_absolute_url(self):
-        return reverse('menu', kwargs={'slug': self.slug})
+        return reverse(self.name.lower())
 
 
 class Category(models.Model):

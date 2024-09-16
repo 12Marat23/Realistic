@@ -1,0 +1,10 @@
+{% load menu_tag %}
+<div class="wrapper">
+    <div id="topnav">
+        <ul class="nav">
+            <li class="active"><a href="{% url 'home' %}">Homepage</a></li>
+            {% show_menu %}
+        </ul>
+        <div class="clear"></div>
+    </div>
+</div>

@@ -1,10 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
 
-</body>
-</html>
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} {{ name }} :: {{ block.super }} {% endblock %}
+
+{% block content %}
+<!-- ####################################################################################################### -->
+<div class="wrapper">
+  <div class="container">
+    <!-- ############################# -->
+    <div id="gallery" class="whitebox">
+      <ul>
+        <li><a rel="gallery_group" href="{% static 'images/demo/470x470.gif' %}" title="Image 1"><img src="{% static 'images/demo/260x130.gif' %}" alt="" /></a></li>
+        <li><a rel="gallery_group" href="{% static 'images/demo/470x470.gif' %}" title="Image 2"><img src="{% static 'images/demo/260x130.gif' %}" alt="" /></a></li>
+        <li class="last"><a rel="gallery_group" href="{% static 'images/demo/470x470.gif' %}" title="Image 3"><img src="{% static 'images/demo/260x130.gif' %}" alt="" /></a></li>
+        <li><a rel="gallery_group" href="{% static 'images/demo/470x470.gif' %}" title="Image 4"><img src="{% static 'images/demo/260x130.gif' %}" alt="" /></a></li>
+        <li><a rel="gallery_group" href="{% static 'images/demo/470x470.gif' %}" title="Image 5"><img src="{% static 'images/demo/260x130.gif' %}" alt="" /></a></li>
+        <li class="last"><a rel="gallery_group" href="{% static 'images/demo/470x470.gif' %}" title="Image 6"><img src="{% static 'images/demo/260x130.gif' %}" alt="" /></a></li>
+        <li><a rel="gallery_group" href="{% static 'images/demo/470x470.gif' %}" title="Image 7"><img src="{% static 'images/demo/260x130.gif' %}" alt="" /></a></li>
+        <li><a rel="gallery_group" href="{% static 'images/demo/470x470.gif' %}" title="Image 8"><img src="{% static 'images/demo/260x130.gif' %}" alt="" /></a></li>
+        <li class="last"><a rel="gallery_group" href="{% static 'images/demo/470x470.gif' %}" title="Image 9"><img src="{% static 'images/demo/260x130.gif' %}" alt="" /></a></li>
+      </ul>
+      <br class="clear" />
+    </div>
+    <!-- ############################# -->
+    <div class="clear"></div>
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+{% endblock %}
