@@ -1,3 +1,4 @@
+<li class="active"><a href="{% url 'home' %}">Homepage</a></li>
 {% for m in my_menu %}
 <li><a href="{{ m.get_absolute_url}}">{{ m.name}}</a></li>
 {% endfor%}
